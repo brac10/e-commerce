@@ -63,7 +63,7 @@ Finally, you will need to install some packages dependencies
 
 ```sh
 npm install --save bootstrap
-npm react-<DocumentEditorContainerComponent id="container" style={{ 'display': 'block', 'height': '590px' }} enableToolbar={true} locale='en-US' />-express-checkout
+npm install --save react-paypal-express-checkout
 ```
 
 ## Importing a Component
