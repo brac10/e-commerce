@@ -1,24 +1,17 @@
-        <h1><b>We are excited a new tutorial from the team at Ranger-PI</b></h1></td>
-        <tr><td>
-        <p>                React, bootstrap, styled Components, conditional rendering all on a Raspberry PI
-        </p>
-        </td></tr>
+# We are excited a new tutorial from the team at Ranger-PI
 
-<div align="center">
-<p>Part of the `Bring your Pi` to Work day and making Fridays an opportunity to push learning to a new level.</p>
-</div>
-<div align="center">
+React, bootstrap, styled Components, conditional rendering all on a Raspberry PI
 
-</div>
+Part of the `Bring your Pi` to Work day and making Fridays an opportunity to push learning to a new level.</p>
 
-Architechture
+## \*\*\*\*Architecture
 
-![ScreenShot](Architecture.png "Architechture")
+![ScreenShot](public/Architecture.png "Architecture")
 
 Create React App is divided into two packages:
 
 - `create-react-app` is a global command-line utility that you use to create new projects.
-- `e-commerce` was but as a stand-one application for training purposes.
+- `e-commerce` is the local stand-one application used for this training exercise.
 
 e-commerce/
 README.md
@@ -40,12 +33,10 @@ README.md
 ..logo.svg
 ..serviceWorker.js
 
-````
-
 For the project to build, **these files must exist with exact filenames**:
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+- `public/index.html` is the page template;
+- `src/index.js` is the JavaScript entry point.
 
 ## Available Scripts
 
@@ -53,19 +44,18 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode. \*\*\*\*
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
-
 
 ## Installing a Dependency
 
@@ -73,12 +63,12 @@ Finally, you will need to install some packages dependencies
 
 ```sh
 npm install --save bootstrap
-npm react-paypal-express-checkout
+npm react-<DocumentEditorContainerComponent id="container" style={{ 'display': 'block', 'height': '590px' }} enableToolbar={true} locale='en-US' />-express-checkout
 ```
 
 ## Importing a Component
 
-This project setup supports ES6 modules thanks to Babel.<br>
+This project setup supports ES6 modules thanks to Babel.
 While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
 For example:
@@ -112,11 +102,10 @@ class DangerButton extends Component {
 export default DangerButton;
 ```
 
-### Additional Components:
+### Additional Components
 
 Google Fonts:
 Oswald
 Permanent Marker
 Font Awesome
 Icon Finder
-````
