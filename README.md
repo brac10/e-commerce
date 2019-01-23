@@ -1,4 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# We are excited a new tutorial from the team at Ranger-PI
+
+React, bootstrap, styled Components, conditional rendering all on a Raspberry PI
+
+Part of the `Bring your Pi` to Work day and making Fridays an opportunity to push learning to a new level.</p>
+
+## \*\*\*\*Architecture
+
+![ScreenShot](public/Architecture.png "Architecture")
+
+Create React App is divided into two packages:
+
+- `create-react-app` is a global command-line utility that you use to create new projects.
+- `e-commerce` is the local stand-one application used for this training exercise.
+
+e-commerce/
+README.md
+..node_modules/
+..package.json
+..public/
+..index.html
+..favicon.ico
+....src/
+......./components
+......./Cart
+..App.css
+..App.js
+..context.js
+..data.js
+..App.test.js
+..index.css
+..index.js
+..logo.svg
+..serviceWorker.js
+
+For the project to build, **these files must exist with exact filenames**:
+
+- `public/index.html` is the page template;
+- `src/index.js` is the JavaScript entry point.
 
 ## Available Scripts
 
@@ -6,63 +44,68 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode. \*\*\*\*
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
+See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installing a Dependency
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Finally, you will need to install some packages dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm install --save bootstrap
+npm react-<DocumentEditorContainerComponent id="container" style={{ 'display': 'block', 'height': '590px' }} enableToolbar={true} locale='en-US' />-express-checkout
+```
 
-### `npm run eject`
+## Importing a Component
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project setup supports ES6 modules thanks to Babel.
+While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For example:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `ButtonComponent.js`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```js
+import React, { Component } from "react";
 
-## Learn More
+class ButtonComponent extends Component {
+  render() {
+    <div className="container">"special rules for your button"</div>;
+  }
+}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+export default ButtonComponent; // Don’t forget to use export as default if the behavior is universal!
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `DangerButton.js`
 
-### Code Splitting
+```js
+import React, { Component } from "react";
+import Button from "./Button"; // Import a component from another file
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+class DangerButton extends Component {
+  render() {
+    return <Button color="red" />;
+  }
+}
 
-### Analyzing the Bundle Size
+export default DangerButton;
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Additional Components
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Google Fonts:
+Oswald
+Permanent Marker
+Font Awesome
+Icon Finder

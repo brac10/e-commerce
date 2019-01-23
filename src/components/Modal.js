@@ -17,7 +17,7 @@ export default class Modal extends Component {
           } else {
             return (
               <ModalContainer>
-                <div className="container">
+               <div className="container">
                   <div className="row">
                     <div
                       id="modal"
@@ -29,7 +29,7 @@ export default class Modal extends Component {
                       <h5 className="text-muted">price: ${price}</h5>
                       <Link to="/">
                         <ButtonContainer onClick={() => closeModal()}>
-                          store
+                          Buy
                         </ButtonContainer>
                       </Link>
                       <Link to="/cart">
