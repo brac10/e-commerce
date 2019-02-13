@@ -69,6 +69,10 @@ For the project to build, **these files must exist with exact filenames**:
 
 ## Available Scripts
 
+First time: Don't forget to run (env.local has db parameters)
+
+### `npm install`
+
 In the project directory, you can run:
 
 ### `npm start`
